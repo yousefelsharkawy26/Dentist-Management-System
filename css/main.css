@@ -220,6 +220,25 @@
     padding: 15px 10px;
 }
 
+.patient-info form div input[type=file] {
+    margin: auto;
+    opacity: 1;
+    height: 50px;
+    width: 170px;
+    cursor: pointer;
+    position: relative;
+}
+
+.patient-info form div input[type=file]::before {
+    content: 'Medical Examination';
+    position: absolute;
+    background-color: #d35bff;
+    padding: 10px 10px;
+    width: 170px;
+    border: 4px solid #d35bff;
+    border-radius: 5px;
+}
+
 body {
     position: relative;
 }
