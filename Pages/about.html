@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap-theme.min.css"> 
+        <link rel="stylesheet" href="../css/sidebar.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="https://kit.fontawesome.com/1590205d08.js" crossorigin="anonymous"></script>
+        
+        <title>User Profile</title>
+        
+    </head>
+    <body>
+        
+        <nav class="sidebar close">
+            <header>
+            <div class="image-text">
+                <span class="image">
+                <img src="../images/Teeth.png" alt="">
+                </span>
+                <div class="text logo-text">
+                <span class="name">عيادة اسنان</span>
+                <span class="profession">مطور مواقع</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+            </header>
+            <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                <i class='bx bx-search icon'></i>
+                <input type="text" placeholder="بحث....">
+                </li>
+                <ul class="menu-links">
+                <li class="nav-link">
+                    <a href="../index.html">
+                    <i class='bx bx-home-alt icon'></i>
+                    <span id="Home" class="text nav-text">الصفحة الرئيسية</span>
+                    </a>
+                </li>
+                <!-- من هنا القائمة المنسدلة -->
+                    <li class="dropdown"><a href="patient-details.html" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class='bx bx-bar-chart-alt-2 icon'></i>
+                        <span class="text nav-text">المرضى</span> <b
+                        class="caret"></b></a>
+                    <ul id="emp-menu" class="dropdown-menu inverse-dropdown">
+                        <li class='bx bx-home-alt icon'><a href="#"><span class="text nav-text">اضافة مريض</span></a></li>
+                        <li class='bx bx-home-alt icon'><a href="#"><span class="text nav-text">عرض المريض</span></a></li>
+                    </ul>
+                </li>
+                <!-- لغاية هنا -->
+                <li class="nav-link">
+                    <a href="about.html">
+                    <i class='bx bx-bar-chart-alt-2 icon'></i>
+                    <span class="text nav-text">عنا</span>
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="Contact.html">
+                    <i class='bx bx-bell icon'></i>
+                    <span class="text nav-text">الاتصال</span>
+                    </a>
+                </li>
+                
+                <li class="nav-link">
+                    <a href="#">
+                    <i class='bx bx-wallet icon'></i>
+                    <span class="text nav-text">البيانات</span>
+                    </a>
+                </li>
+                </ul>
+            </div>
+            <div class="bottom-content">
+                <li class="">
+                <a href="../login/login.html">
+                    <i class='bx bx-log-out icon'></i>
+                    <span class="text nav-text">تسجيل خروج</span>
+                </a>
+                </li>
+                <li class="mode">
+                <div class="sun-moon">
+                    <i class='bx bx-moon icon moon'></i>
+                    <i class='bx bx-sun icon sun'></i>
+                </div>
+                <span class="mode-text text">الوضع الداكن</span>
+                <div class="toggle-switch">
+                    <span class="switch"></span>
+                </div>
+                </li>
+            </div>
+            </div>
+        </nav>
+
+        <section class="about">
+            <div class="card">
+                <div class="image">
+                    <img src="../images/be_a_denist.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h1>ABOUT</h1>
+                    <p>
+                        Welcome to a world of limitless possibilities,
+                         where the journey is as exhilarating as the destination,
+                          and where every moment is an opportunity to make your mark on the canvas of existence.
+                         The only limit is the extent of your imagination.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="about-details">
+            <div class="about-info">
+                <div class="contact">
+                    <div>
+                        <h2>Address:</h2>
+                        <p>
+                            123 Example St, San Francisco,
+                            CA 12345-6789
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Telephone:</h2>
+                        <p>(123)-456-7890</p>
+                    </div>
+                    <div>
+                        <h2>Email:</h2>
+                        <p>hi@example.com</p>
+                    </div>
+                    <div>
+                        <a class="link" href="#"> 
+                             <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a class="link" href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="link" href="#">    
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.3307645033374!2d31.35626162461407!3d31.044890274435165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79dd4295c80e9%3A0x29c566a018cecb77!2z2KzYp9mF2LnYqSDYp9mE2YXZhti12YjYsdip!5e0!3m2!1sar!2seg!4v1714566288346!5m2!1sar!2seg"
+                       style="border:0;"
+                        allowfullscreen=""
+                         loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                </div>
+            </div>
+        </section>
+
+        <script  src="../js/script.js"></script>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    </body>
+</html>

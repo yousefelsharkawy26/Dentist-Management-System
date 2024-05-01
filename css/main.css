@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+.main-sec {
+    display: grid;
+    grid-template-rows: repeat(auto);
+    height: 100vh;
+    width: calc(100% - 250px);
+}
+
+.main-sec .sec-1,
+.main-sec .sec-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-sec .sec-1 div:first-child {
+    padding: 20px 90px;
+    overflow: hidden;
+    background-color: #bfefdf58;
+    box-shadow: 5px 5px 10px 0px #333;
+}
+
+.main-sec .sec-1 div:first-child p,
+.main-sec .sec-2 div:first-child p {
+    font-family: Montserrat;
+    letter-spacing: 5px;
+    color: var(--text-color);
+}
+
+.main-sec .sec-1 .patient-status div,
+.main-sec .sec-1 .Doctor-status .txt-status {
+    margin: 10px;
+    padding: 15px 60px;
+    background-color: #d35bff;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 22px;
+    font-family: Montserrat;
+    letter-spacing: 10px;
+}
+
+.main-sec .sec-2 .booking {
+    display: flex;
+    width: 35vw;
+}
+
+.main-sec .sec-2 .booking table {
+    width: 90%;
+    background-color: #bfefdf58;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 10px 0px #333;
+    margin: 10px;
+}
+
+.main-sec .sec-2 .booking thead {
+    text-align: center;
+}
+
+.main-sec .sec-2 .booking thead td {
+    padding: 1.7vw 0 1.7vw 10px;
+    color: var(--primary-color);
+}
+
+.main-sec .sec-2 .booking tbody td {
+    padding: 1vw 0;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.main-sec .sec-2 .booking tbody tr:hover
+{
+    transition: all 0.5s ease-in-out;
+    background-color: coral;
+    color: white;
+}
+
+.main-sec .sec-2 .add-patient {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #bfefdf58;
+    box-shadow: 5px 5px 10px 0px #333;
+    padding: 20px 0;
+}
+
+.main-sec .sec-2 .add-patient div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.main-sec .sec-2 .add-patient div input[type=submit] {
+    margin: auto;
+    background-color: #d35bff;
+    padding: 10px 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    font-family: Montserrar;
+    font-weight: bold;
+    color: var(--primary-color-light);
+}
+
+.main-sec .sec-2 .add-patient div input[type=submit]:hover {
+    padding: 10px 55px;
+}
+
+.main-sec .sec-2 .add-patient div input[type=text],
+.main-sec .sec-2 .add-patient div input[type=datetime-local] {
+    border: none;
+    width: 220px;
+    border-bottom: 1px solid #999;
+    height: 30px;
+}
+
+
+.patient-info {
+    margin: 100px 10%;
+    width: 70%;
+    height: 500px;
+    background-color: var(--primary-color-light);
+    padding: 20px 70px;
+    box-shadow: 5px 5px 10px 0 #333;
+}
+.patient-info form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.patient-info form .sec-1 div,
+.patient-info form .sec-2 div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.patient-info form .sec-1 div label,
+.patient-info form .sec-2 div label,
+.patient-info form .sec-1 div p {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+
+.patient-info form div input[type=text],
+.patient-info form .sec-2 div #Notes {
+    width: 220px;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid;
+    font-size: 18px;
+    outline: none;
+    color: var(--text-color);
+}
+
+.patient-info form .sec-2 div #Notes,
+.contact-info form .card div textarea {
+    height: 110px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+.patient-info form div input[type=radio] {
+    opacity: 0;
+}
+
+.patient-info form div input[type=radio] + label {
+    background-color: #0D6EFD;
+    border: 5px solid #0D6EFD;
+    width: 80px;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.patient-info form div input[type=radio]:checked + label {
+    background: white;
+    color: #0D6EFD;
+}
+
+.patient-info form div input[type=submit],
+.contact-info form div input[type=submit] {
+    margin: auto;
+    margin-top: 50px;
+    width: 120px;
+    padding: 15px;
+    border: none;
+    background-color: #999;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px 0 #333;
+    color: white;
+    font-size: 20px;
+}
+
+.patient-info form div input[type=submit]:hover,
+.contact-info form div input[type=submit]:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    color: #999;
+    border: 5px solid;
+    padding: 15px 10px;
+}
+
+body {
+    position: relative;
+}
+
+.contact-info {
+    position: absolute;
+    width: 600px;
+    height: 380px;
+    background-color: var(--primary-color-light);
+    box-shadow: 2px 2px 5px 0 #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    top: calc(50% - 190px);
+    left: calc(50% - 300px);
+}
+
+
+.contact-info form .card div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 10px 0;
+    color: var(--text-color);
+}
+
+.contact-info form .card div input[type=text] {
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.contact-info form div input[type=submit] {
+    padding: 5px 20px;
+    border: 5px solid #999;
+}
+
+.contact-info form div input[type=submit]:hover {
+    padding: 5px 20px;
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+}
+
+.about .card {
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about .card .image {
+    width: 350px;
+    height: 420px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.about .card .image img {
+    width: 100%;
+}
+
+.about .card .text {
+    width: 50%;
+}
+
+.about .card .text h1 {
+    font-size: 90px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.about .card .text p {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.about-details {
+    width: 90%;
+}
+
+.about-details .about-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+    margin-top: 80px;
+}
+
+.about-details .about-info .map iframe {
+    width: 500px;
+    height: 350px;
+}
+
+.about-details .about-info .link {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+@media (max-width:960px) {
+    .about .card {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .about .card .image {
+        position: static;
+        margin: auto;
+        height: 270px;
+
+    }
+
+    .about .card .text {
+        width: 80%;
+        position: static;
+        margin: auto;
+    }
+
+    .about .card .text h1 {
+        font-style: 50px;
+    }
+
+    .about .card .text p {
+        font-size: 20px;
+    }
+
+    .about-details .about-info {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .about-details .about-info .map iframe {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 380) {
+    .about-details .about-info {
+        margin-top: 100px;
+    }
+}

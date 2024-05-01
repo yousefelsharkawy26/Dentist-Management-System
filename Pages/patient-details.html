@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css"> 
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/1590205d08.js" crossorigin="anonymous"></script>
+    <title>User Profile</title>
+</head>
+<body>
+    
+    <nav class="sidebar close">
+        <header>
+          <div class="image-text">
+            <span class="image">
+              <img src="../images/Teeth.png" alt="">
+            </span>
+            <div class="text logo-text">
+              <span class="name">عيادة اسنان</span>
+              <span class="profession">مطور مواقع</span>
+            </div>
+          </div>
+          <i class='bx bx-chevron-right toggle'></i>
+        </header>
+        <div class="menu-bar">
+          <div class="menu">
+            <li class="search-box">
+              <i class='bx bx-search icon'></i>
+              <input type="text" placeholder="بحث....">
+            </li>
+            <ul class="menu-links">
+              <li class="nav-link">
+                <a href="../index.html">
+                  <i class='bx bx-home-alt icon'></i>
+                  <span id="Home" class="text nav-text">الصفحة الرئيسية</span>
+                </a>
+              </li>
+              <!-- من هنا القائمة المنسدلة -->
+                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class='bx bx-bar-chart-alt-2 icon'></i>
+                    <span class="text nav-text">المرضى</span> <b
+                    class="caret"></b></a>
+                <ul id="emp-menu" class="dropdown-menu inverse-dropdown">
+                    <li class='bx bx-home-alt icon'><a href="#"><span class="text nav-text">اضافة مريض</span></a></li>
+                    <li class='bx bx-home-alt icon'><a href="#"><span class="text nav-text">عرض المريض</span></a></li>
+                </ul>
+             </li>
+             <!-- لغاية هنا -->
+              <li class="nav-link">
+                <a href="about.html">
+                  <i class='bx bx-bar-chart-alt-2 icon'></i>
+                  <span class="text nav-text">عنا</span>
+                </a>
+              </li>
+              <li class="nav-link">
+                <a href="Contact.html">
+                  <i class='bx bx-bell icon'></i>
+                  <span class="text nav-text">الاتصال</span>
+                </a>
+              </li>
+              
+              <li class="nav-link">
+                <a href="Data-table.html">
+                  <i class='bx bx-wallet icon'></i>
+                  <span class="text nav-text">البيانات</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom-content">
+            <li class="">
+              <a href="#">
+                <i class='bx bx-log-out icon'></i>
+                <span class="text nav-text">تسجيل خروج</span>
+              </a>
+            </li>
+            <li class="mode">
+              <div class="sun-moon">
+                <i class='bx bx-moon icon moon'></i>
+                <i class='bx bx-sun icon sun'></i>
+              </div>
+              <span class="mode-text text">الوضع الداكن</span>
+              <div class="toggle-switch">
+                <span class="switch"></span>
+              </div>
+            </li>
+          </div>
+        </div>
+      </nav>
+      
+      <section class="patient-info" id="patient-info">
+        <form>
+            <div class="sec-1">
+                <div>
+                <label for="Name">Name : </label>
+                <input type="text" name="Name" id="Name" />
+                </div>
+        
+                <div>
+                    <label for="PhoneNumber">Phone Number : </label>
+                    <input type="text" name="PhoneNumber" id="PhoneNumber"/>
+                </div>
+        
+                <div>
+                    <label for="Address">Address : </label>
+                    <input type="text" name="Address" id="Address"/>
+                </div>
+        
+                <div>
+                  <label for="Age">Age : </label>
+                  <input type="text" name="Age" id="Age"/>
+                </div>
+        
+                <div>
+                    <p>Gender : </p>
+                    <div>
+                      <input type="radio" name="Gender" id="Male"/>
+                      <label for="Male">Male</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="Gender" id="Female"/>
+                      <label for="Female">Female</label>
+                    </div>
+                </div>
+        
+                <div>
+                    <label for="SpecialCase">Special Case : </label>
+                    <input type="text" name="SpecialCase" id="SpecialCase"/>
+                </div>
+        
+                <div>
+                    <label for="Disease">Disease : </label>
+                    <input type="text" name="Disease" id="Disease"/>
+                </div>
+        
+                <div>
+                    <div>
+                        <p>First Time? </p>
+                    </div>
+                    <div>
+                      <input type="radio" name="Times" id="yes"/>
+                      <label for="yes">yes</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="Times" id="no"/>
+                      <label for="no">No</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sec-2">
+                <div>
+                    <label for="Charge">Patient Charge : </label>
+                    <input type="text" name="PatientCharge" id="Charge"/>
+                </div>
+        
+                <div>
+                    <label for="Diagnosis">Patient Diagnosis :</label>
+                    <input type="text" name="Patient Diagnosis" id="Diagnosis"/>
+                </div>
+        
+                <div>
+                    <label for="operation">operation : </label>
+                    <input type="text" name="PatientCharge" id="operation" />
+                </div>
+        
+                <div>
+                    <label for="Notes">Notes : </label>
+                    <textarea id="Notes" name="Notes"></textarea>
+                </div>
+        
+                <div>
+                    <input type="submit" value="Save">
+                </div>
+            </div>
+        </form>
+    </section>
+
+    
+      <script  src="../js/script.js"></script>
+      <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
